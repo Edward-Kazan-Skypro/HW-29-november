@@ -5,14 +5,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Controller {
-
     @GetMapping("/")
-    public String startPage(){
+    public String startPage() {
         return "Приложение запущено";
     }
 
     @GetMapping("/info")
-    public String infoPage(){
+    public String infoPage() {
         String name = "Мухаметзянов Эдуард";
         String project = "AboutMeWEB";
         String dateProject = "29 ноября 2022 года";
